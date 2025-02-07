@@ -1,5 +1,6 @@
 import jwt from "jsonwebtoken";
 import 'dotenv/config';
+import { mensaje } from "./mensajes.js";
 
 export function crearToken(dato) {
     return new Promise((resolve, reject) => {

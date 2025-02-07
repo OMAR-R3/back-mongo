@@ -14,8 +14,9 @@ export function validarPassword(password,salt,hash){
     return hashEvaluar == hash;
 }
 
-export function usuarioAutorizado(){
-
+export function usuarioAutorizado(req,res,next){
+    console.log(req.cookies);
+    next();
 }
 
 export function adminAutorizado(){
